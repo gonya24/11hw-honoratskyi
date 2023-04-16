@@ -2,8 +2,9 @@ var arr =  [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,
 let data = 0 ;
 console.log(arr);
 for (i=0; i < arr.length; i++) {
-    if (arr[i]>0 && arr[i]%2==0) {
+    if (arr[i]>0 && arr[i]%2!=0) {
         data +=arr[i];
+        
     }
 }
-console.log (`Total sum paired positive elements: ${data}`);
+console.log (`Total sum unpaired positive elements: ${data}`);
